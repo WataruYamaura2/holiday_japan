@@ -11,11 +11,13 @@ defmodule HolidayJapan do
       :world
 
   """
+  @spec holiday?(Date) :: boolean
   def holiday?(date) do
      holidays() |>
       Enum.any?(&(&1["date"] == Date.to_string(date)))
   end
 
+  @spec name(Date) :: String.t | nil
   def name(date) do
     holiday = holidays() |>
          Enum.find(&(&1["date"] == Date.to_string(date)))

@@ -21,6 +21,7 @@ defmodule HolidayJapan.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:poison, "~> 3.1"},
       {:timex, "~> 3.1"}
     ]
   end
