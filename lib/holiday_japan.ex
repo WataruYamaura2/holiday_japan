@@ -1,16 +1,5 @@
 defmodule HolidayJapan do
-  @moduledoc """
-  Documentation for HolidayJapan.
-  """
 
-  @doc """
-
-  ## Examples
-
-      iex> HolidayJapan.hello
-      :world
-
-  """
   @spec holiday?(Date) :: boolean
   def holiday?(date) do
      holidays() |>
